@@ -1,10 +1,37 @@
 # ap_dark8
 
-ap_dark8 日本語テスト。
+ap_dark8 は 8色しか色を扱えない Mac Terminal.app のために作成した色設定です。
+<a href="http://visor.binaryage.com/">Visor</a> がどうしても使いたくて iTerm や urxvt だと困ったため作成しました。
 
-vim で追加した日本語行
+<a href="http://www.flickr.com/photos/36836508@N02/4931578715/" title="ap_dark8 by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4100/4931578715_bce275f211.jpg" width="500" height="313" alt="ap_dark8" /></a>
 
-## Terminal.app 
+## Terminal.app に色設定を追加する
 
-<a href="http://github.com/apribase/ap_dark8/blob/master/Visor_AP_Dark8.terminal">Visor_AP_Dark8.terminal</a>
+<a href="http://www.flickr.com/photos/36836508@N02/4931578877/" title="Mac Terminal 設定 by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4116/4931578877_7c08b95da1.jpg" width="500" height="380" alt="Mac Terminal 設定" /></a>
 
+<a href="http://github.com/apribase/ap_dark8/blob/master/Visor_AP_Dark8.terminal" title="Visor_AP_Dark8.terminal">Visor_AP_Dark8.terminal</a> は Mac Terminal.app の設定をエクスポートしたファイルです。
+<a href="http://github.com/apribase/ap_dark8/blob/master/Visor_AP_Dark8.terminal">Visor_AP_Dark8.terminal</a> をダブルクリックすると Visor_AP_Dark8 が Terminal.app の設定に追加されます。
+
+<a href="http://visor.binaryage.com/">Visor</a> を使用する場合、読み込み設定は自動的に Visor が選択されるため、Visor_AP_Dark8 の名前を Visor に置き換えてください。
+
+## .vim/color に色設定を追加する
+
+<a href="http://github.com/apribase/ap_dark8/blob/master/ap_dark8.vim" title="ap_dark8.vim">ap_dark8.vim</a> は vim 向けの色設定ファイルです。
+通常の vim 色設定ファイルと同じように $HOME/.vim/color/ap_dark8.vim に置くことで使用できます。
+
+## terminfo について
+
+terminfo はターミナルの能力に関する情報です。
+tput colors コマンドで確認することができます。
+256色描画が可能なターミナル (たとえば gnome-terminal) であっても、最初は8を返す設定 (TERM=xterm) になっている場合が多いです。
+描画自体は terminfo に関係なく可能であるため、256color.pl で確認することができます。
+しかし、vim などのアプリケーションに「256色描画が可能である」という情報を伝えるために terminfo が使用されます。
+
+
+## 256色描画可能なターミナルについて
+
+Mac では iTerm や urxvt (256色パッチ適用) で256色描画が可能です。
+しかし Visor は Terminal.app にしか適用できませんし、urxvt では日本語入力環境を X に用意する必要があります。
+
+Linux では gnome-terminal, konsole, urxvt (256色パッチ適用) で256色描画が可能です。
+Visor のようなドロップダウンターミナルとして Guake や Yakuake が存在しますが、色の設定が行いにくいです。
