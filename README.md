@@ -5,6 +5,10 @@
 ap_dark8 は 8色しか色を扱えない Mac Terminal.app のために作成した色設定です。
 <a href="http://visor.binaryage.com/">Visor</a> がないと生きていけないので作成しました。
 
+## 目的
+
+「Visor + tmux + vim で ssh 先でも快適にプログラミング」をコンセプトに。
+
 代替案として iTerm や urxvt で Visor のような振る舞いをする設定や、sshfs + MacVim (フルカラー) でテキスト編集するなどの方法を模索しましたが、どこかで妥協する必要はあり、「そもそも256色使えたとしてほんとうに使うのか？」と冷静になった後、8色でそれなりに満足できる設定を作ろうと思ったのが経緯です。
 
 Terminal.app の色変更には <a href="http://niw.at/articles/2007/11/02/TerminalColoreopard/ja" title="TerminalColoreopard">TerminalColoreopard</a> を使用しています。
@@ -23,10 +27,10 @@ Terminal.app の色変更には <a href="http://niw.at/articles/2007/11/02/Termi
 
 ## .vim/color に色設定を追加する
 
+<a href="http://www.flickr.com/photos/36836508@N02/4931710837/" title="ap_black8.vim by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4074/4931710837_fd427cb57d.jpg" width="500" height="310" alt="ap_black8.vim" /></a>
+
 <a href="http://github.com/apribase/ap_dark8/blob/master/ap_dark8.vim" title="ap_dark8.vim">ap_dark8.vim</a> は vim 向けの色設定ファイルです。
 通常の vim 色設定ファイルと同じように $HOME/.vim/color/ap_dark8.vim に置くことで使用できます。
-
-tmux のデフォルト TERMに screen-256color を記述している場合は screen にすることを忘れないようにしてください。
 
 ## (余談) 256色描画可能なターミナルについて
 
