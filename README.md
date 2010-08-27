@@ -9,7 +9,7 @@ ap_dark8 は 8色しか色を扱えない Mac Terminal.app のために作成し
 
 Terminal.app の色変更には <a href="http://niw.at/articles/2007/11/02/TerminalColoreopard/ja" title="TerminalColoreopard">TerminalColoreopard</a> を使用しています。
 
-ターミナルそのものの描画能力、TERMINFO の情報、tmux や screen 等のマルチプレクサ、いろいろな環境から接続される ssh サーバのための分岐設定。
+ターミナルそのものの描画能力、TERMINFO の情報、tmux や screen 等のマルチプレクサの描画能力、いろいろな環境から接続される ssh サーバのための分岐設定。
 ターミナル生活は悩ましいですね。
 
 ## Terminal.app に色設定を追加する
