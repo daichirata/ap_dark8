@@ -34,7 +34,7 @@ bright colors 8色は <a href="http://blog.infinitered.com/entries/show/6">IR_Bl
 通常の vim 色設定ファイルと同じように $HOME/.vim/color/ap_dark8.vim に置くことで使用できます。
 
 <a href="http://blog.infinitered.com/entries/show/8" title="ir_black">ir_black.vim</a> をベースに、明るすぎる色を抑えるために <a href="http://d.hatena.ne.jp/y_yanbe/20070904/1188911217">inkpot16.vim</a> の色を参考にしました。  
-BOLD 指定がいくつか残っていますが、BOLD は使っていません。  
+BOLD 指定がいくつか残っていますが、BOLD に対して明るい色を使用する設定は想定していません。 
 また、色はすべて dark から始まる基本8色のみを使っているため、bright color は使用していません。
 
 ## (参考) 256色描画可能なターミナルについて
