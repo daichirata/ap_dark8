@@ -32,6 +32,10 @@ Terminal.app の色変更には <a href="http://niw.at/articles/2007/11/02/Termi
 <a href="http://github.com/apribase/ap_dark8/blob/master/ap_dark8.vim" title="ap_dark8.vim">ap_dark8.vim</a> は vim 向けの色設定ファイルです。
 通常の vim 色設定ファイルと同じように $HOME/.vim/color/ap_dark8.vim に置くことで使用できます。
 
+<a href="http://blog.infinitered.com/entries/show/8" title="ir_black">ir_black.vim</a> をベースに、明るすぎる色を抑えるために <a href="http://d.hatena.ne.jp/y_yanbe/20070904/1188911217">inkpot16.vim</a> の色を参考にしました。
+BOLD 指定がいくつか残っていますが、BOLD は使っていません。
+また、色はすべて dark から始まる基本8色のみを使っているため、bright color は使用していません。
+
 ## (余談) 256色描画可能なターミナルについて
 
 <a href="http://www.flickr.com/photos/36836508@N02/4931623821/" title="iTerm 256colors2.pl by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4137/4931623821_774d413a08.jpg" width="500" height="266" alt="iTerm 256colors2.pl" /></a>
@@ -59,4 +63,4 @@ tput colors コマンドで確認することができます。
 
 ssh 接続した場合、ssh 先に terminfo が存在しないこともあります。
 たとえば Debian サーバの場合、ncurses-base パッケージによく使われる terminfo が、その他は ncurses-term パッケージに含まれていますが、最小インストールでこれらがインストールされていないこともあります。
-普段 Linux を使っていて Solaris にログインしたらターミナルの挙動がおかしくなったといったときも、まずは terminfo を確認してみましょう。
+普段 Linux を使っていたが Solaris にログインしたらターミナルの挙動がおかしくなったといったときも、まずは terminfo を確認してみましょう。
