@@ -3,11 +3,11 @@
 <a href="http://www.flickr.com/photos/36836508@N02/4931578715/" title="ap_dark8 by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4100/4931578715_bce275f211.jpg" width="500" height="313" alt="ap_dark8" /></a>
 
 ap_dark8 は 8色 (16色) しか色を扱えない Mac Terminal.app のために作成した色設定です。
-<a href="http://visor.binaryage.com/">Visor</a> がないと生きていけないので作成しました。
+<a href="http://visor.binaryage.com/" title="Visor">Visor</a> がないと生きていけないので作成しました。
 
 ## 目的
 
-「Visor + tmux + vim で ssh 先でも快適にプログラミング」をコンセプトに。
+「<a href="http://visor.binaryage.com/" title="Visor">Visor</a> + <a href="http://tmux.sourceforge.net/" title="tmux">tmux</a> + <a href="http://www.vim.org/" title="vim">vim</a> で ssh 先でも快適にプログラミング」をコンセプトに。
 
 代替案として iTerm や urxvt で Visor のような振る舞いをする設定や、sshfs + MacVim (フルカラー) でテキスト編集するなどの方法を模索しましたが、どこかで妥協する必要はあり、「そもそも256色使えたとしてほんとうに使うのか？」と冷静になった後、8色でそれなりに満足できる設定を作ろうと思ったのが経緯です。
 
@@ -25,6 +25,8 @@ Terminal.app の色変更には <a href="http://niw.at/articles/2007/11/02/Termi
 
 <a href="http://visor.binaryage.com/">Visor</a> を使用する場合、読み込み設定は自動的に Visor が選択されるため、Visor_AP_Dark8 の名前を Visor に置き換えてください。
 
+bright colors 8色は <a href="http://blog.infinitered.com/entries/show/6">IR_Black</a>を参考にした際の設定のままですが、ボールドテキストを使わない設定にしているため使用していません。
+
 ## .vim/color に色設定を追加する
 
 <a href="http://www.flickr.com/photos/36836508@N02/4931710837/" title="ap_black8.vim by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4074/4931710837_fd427cb57d.jpg" width="500" height="310" alt="ap_black8.vim" /></a>
@@ -36,7 +38,7 @@ Terminal.app の色変更には <a href="http://niw.at/articles/2007/11/02/Termi
 BOLD 指定がいくつか残っていますが、BOLD は使っていません。
 また、色はすべて dark から始まる基本8色のみを使っているため、bright color は使用していません。
 
-## (余談) 256色描画可能なターミナルについて
+## (参考) 256色描画可能なターミナルについて
 
 <a href="http://www.flickr.com/photos/36836508@N02/4931623821/" title="iTerm 256colors2.pl by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4137/4931623821_774d413a08.jpg" width="500" height="266" alt="iTerm 256colors2.pl" /></a>
 
@@ -51,7 +53,7 @@ Visor のようなドロップダウンターミナルとして Guake や Yakuak
 Terminal.app は8色 (ボールドテキストに対して明るめの色を設定した場合16色) しか扱うことができません。
 Visor も Terminal.app を使用するため同様です。
 
-## (余談) terminfo について
+## (参考) terminfo について
 
 <a href="http://www.flickr.com/photos/36836508@N02/4932276836/" title="tput colors by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4134/4932276836_e2934df156.jpg" width="378" height="233" alt="tput colors" /></a>
 
