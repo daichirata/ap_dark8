@@ -2,7 +2,7 @@
 
 <a href="http://www.flickr.com/photos/36836508@N02/4931578715/" title="ap_dark8 by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4100/4931578715_bce275f211.jpg" width="500" height="313" alt="ap_dark8" /></a>
 
-ap_dark8 は 8色しか色を扱えない Mac Terminal.app のために作成した色設定です。
+ap_dark8 は 8色 (16色) しか色を扱えない Mac Terminal.app のために作成した色設定です。
 <a href="http://visor.binaryage.com/">Visor</a> がないと生きていけないので作成しました。
 
 ## 目的
@@ -58,7 +58,7 @@ Visor も Terminal.app を使用するため同様です。
 terminfo はターミナルの能力に関する情報です。
 tput colors コマンドで確認することができます。
 256色描画が可能なターミナル (たとえば gnome-terminal) であっても、最初は8を返す設定 (TERM=xterm) になっている場合が多いです。
-描画自体は terminfo に関係なく可能であるため、256color.pl で確認することができます。
+描画自体は terminfo に関係なく可能であり、<a href="http://frexx.de/xterm-256-notes/" title="256colors2.pl">256colors2.pl</a> で確認することができます。
 しかし、vim などのアプリケーションに「256色描画が可能である」という情報を伝えるために terminfo が使用されます。
 
 ssh 接続した場合、ssh 先に terminfo が存在しないこともあります。
