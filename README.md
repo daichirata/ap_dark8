@@ -31,7 +31,7 @@ bright colors 8色は <a href="http://blog.infinitered.com/entries/show/6">IR_Bl
 <a href="http://www.flickr.com/photos/36836508@N02/4931710837/" title="ap_black8.vim by apribase, on Flickr"><img src="http://farm5.static.flickr.com/4074/4931710837_fd427cb57d.jpg" width="500" height="310" alt="ap_black8.vim" /></a>
 
 <a href="http://github.com/apribase/ap_dark8/blob/master/ap_dark8.vim" title="ap_dark8.vim">ap_dark8.vim</a> は vim 向けの色設定ファイルです。  
-通常の vim 色設定ファイルと同じように $HOME/.vim/colors/ap_dark8.vim に置くことで使用できます。
+通常の vim colorscheme ファイルと同じように $HOME/.vim/colors/ap_dark8.vim に置いて読み込み設定を行うことで使用できます。
 
 <a href="http://blog.infinitered.com/entries/show/8" title="ir_black">ir_black.vim</a> をベースに、明るすぎる色を抑えるために <a href="http://d.hatena.ne.jp/y_yanbe/20070904/1188911217">inkpot16.vim</a> の色を参考にしました。  
 BOLD 指定がいくつか残っていますが、BOLD に対して明るい色を使用する設定は想定していません。   
