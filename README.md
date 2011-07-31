@@ -5,6 +5,14 @@
 ap_dark8 は 8色 (16色) しか色を扱えない Mac Terminal.app のために作成した色設定です。  
 <a href="http://visor.binaryage.com/" title="Visor">Visor</a> がないと生きていけないので作成しました。
 
+## ※ Lion ユーザへ
+
+Lion の Terminal.app は256色に対応したため、 TerminalColoreopard を必要としなくなりました。
+Lion_AP_Dark8.terminal をダブルクリックして設定を適用してください。
+
+また、Visor は TotalTerminal へと名前を変え SIMBL を必要としなくなりました。
+ターミナル設定名を Visor にする必要がなくなったため、Lion_AP_Dark8 は好きな名前に変更してください。
+
 ## 目的
 
 「<a href="http://visor.binaryage.com/" title="Visor">Visor</a> + <a href="http://tmux.sourceforge.net/" title="tmux">tmux</a> + <a href="http://www.vim.org/" title="vim">vim</a> で ssh 先でも快適にプログラミング」をコンセプトに。
